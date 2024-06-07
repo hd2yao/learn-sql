@@ -24,3 +24,17 @@ CREATE TABLE Department(
 
 INSERT INTO Department VALUES(1,'IT');
 INSERT INTO Department VALUES(2,'Sales');
+
+-- 练习二：换座位
+DROP TABLE if exists seat;
+CREATE TABLE seat(
+    id INT,
+    student VARCHAR(20),
+    PRIMARY KEY (id)
+);
+
+INSERT INTO seat VALUES(1,'Abbot');
+INSERT INTO seat VALUES(2,'Doris');
+INSERT INTO seat VALUES(3,'Emerson');
+INSERT INTO seat VALUES(4,'Green');
+INSERT INTO seat VALUES(5,'Jeames');
