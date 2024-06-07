@@ -38,3 +38,16 @@ INSERT INTO seat VALUES(2,'Doris');
 INSERT INTO seat VALUES(3,'Emerson');
 INSERT INTO seat VALUES(4,'Green');
 INSERT INTO seat VALUES(5,'Jeames');
+
+-- 练习三：分数排名
+DROP TABLE if exists score;
+CREATE TABLE score(
+    class INT,
+    score_avg INT,
+    PRIMARY KEY (class)
+);
+
+INSERT INTO score VALUES(1, 93);
+INSERT INTO score VALUES(2, 93);
+INSERT INTO score VALUES(3, 93);
+INSERT INTO score VALUES(4, 91);
