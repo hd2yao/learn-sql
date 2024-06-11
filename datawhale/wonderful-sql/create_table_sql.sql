@@ -67,3 +67,17 @@ INSERT INTO logs VALUES (4, 2);
 INSERT INTO logs VALUES (5, 1);
 INSERT INTO logs VALUES (6, 2);
 INSERT INTO logs VALUES (7, 2);
+
+-- 练习五：树节点
+DROP TABLE if exists tree;
+CREATE TABLE tree(
+    id INT,
+    p_id INT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO tree VALUES (1, null);
+INSERT INTO tree VALUES (2, 1);
+INSERT INTO tree VALUES (3, 1);
+INSERT INTO tree VALUES (4, 2);
+INSERT INTO tree VALUES (5, 2);
