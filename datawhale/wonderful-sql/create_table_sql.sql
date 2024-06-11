@@ -51,3 +51,19 @@ INSERT INTO score VALUES(1, 93);
 INSERT INTO score VALUES(2, 93);
 INSERT INTO score VALUES(3, 93);
 INSERT INTO score VALUES(4, 91);
+
+-- 练习四：连续出现的数字
+DROP TABLE if exists logs;
+CREATE TABLE logs(
+    id INT,
+    num INT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO logs VALUES (1, 1);
+INSERT INTO logs VALUES (2, 1);
+INSERT INTO logs VALUES (3, 1);
+INSERT INTO logs VALUES (4, 2);
+INSERT INTO logs VALUES (5, 1);
+INSERT INTO logs VALUES (6, 2);
+INSERT INTO logs VALUES (7, 2);
