@@ -81,3 +81,20 @@ INSERT INTO tree VALUES (2, 1);
 INSERT INTO tree VALUES (3, 1);
 INSERT INTO tree VALUES (4, 2);
 INSERT INTO tree VALUES (5, 2);
+
+-- 练习六：至少有五名直接下属的经理
+DROP TABLE if exists Employee2;
+CREATE TABLE Employee2(
+    id INT,
+    name varchar(20),
+    department varchar(20),
+    managerid INT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Employee2 VALUES (101,  'John', 'A', null);
+INSERT INTO Employee2 VALUES (102,   'Dan', 'A', 101);
+INSERT INTO Employee2 VALUES (103, 'James', 'A', 101);
+INSERT INTO Employee2 VALUES (104,   'Amy', 'A', 101);
+INSERT INTO Employee2 VALUES (105,  'Anne', 'A', 101);
+INSERT INTO Employee2 VALUES (106,   'Ron', 'B', 101);
