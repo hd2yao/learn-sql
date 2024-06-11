@@ -98,3 +98,6 @@ INSERT INTO Employee2 VALUES (103, 'James', 'A', 101);
 INSERT INTO Employee2 VALUES (104,   'Amy', 'A', 101);
 INSERT INTO Employee2 VALUES (105,  'Anne', 'A', 101);
 INSERT INTO Employee2 VALUES (106,   'Ron', 'B', 101);
+
+-- 练习7：各部门前3高工资的员工（难度：中等）
+-- employee 和 department
