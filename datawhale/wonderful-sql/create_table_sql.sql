@@ -51,3 +51,53 @@ INSERT INTO score VALUES(1, 93);
 INSERT INTO score VALUES(2, 93);
 INSERT INTO score VALUES(3, 93);
 INSERT INTO score VALUES(4, 91);
+
+-- 练习四：连续出现的数字
+DROP TABLE if exists logs;
+CREATE TABLE logs(
+    id INT,
+    num INT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO logs VALUES (1, 1);
+INSERT INTO logs VALUES (2, 1);
+INSERT INTO logs VALUES (3, 1);
+INSERT INTO logs VALUES (4, 2);
+INSERT INTO logs VALUES (5, 1);
+INSERT INTO logs VALUES (6, 2);
+INSERT INTO logs VALUES (7, 2);
+
+-- 练习五：树节点
+DROP TABLE if exists tree;
+CREATE TABLE tree(
+    id INT,
+    p_id INT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO tree VALUES (1, null);
+INSERT INTO tree VALUES (2, 1);
+INSERT INTO tree VALUES (3, 1);
+INSERT INTO tree VALUES (4, 2);
+INSERT INTO tree VALUES (5, 2);
+
+-- 练习六：至少有五名直接下属的经理
+DROP TABLE if exists Employee2;
+CREATE TABLE Employee2(
+    id INT,
+    name varchar(20),
+    department varchar(20),
+    managerid INT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Employee2 VALUES (101,  'John', 'A', null);
+INSERT INTO Employee2 VALUES (102,   'Dan', 'A', 101);
+INSERT INTO Employee2 VALUES (103, 'James', 'A', 101);
+INSERT INTO Employee2 VALUES (104,   'Amy', 'A', 101);
+INSERT INTO Employee2 VALUES (105,  'Anne', 'A', 101);
+INSERT INTO Employee2 VALUES (106,   'Ron', 'B', 101);
+
+-- 练习7：各部门前3高工资的员工（难度：中等）
+-- employee 和 department
