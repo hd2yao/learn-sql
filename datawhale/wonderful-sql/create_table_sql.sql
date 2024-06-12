@@ -101,3 +101,14 @@ INSERT INTO Employee2 VALUES (106,   'Ron', 'B', 101);
 
 -- 练习7：各部门前3高工资的员工（难度：中等）
 -- employee 和 department
+
+-- 练习八：平面上最近距离
+DROP TABLE IF EXISTS point_2d;
+CREATE TABLE point_2d (
+    x INT,
+    y INT
+);
+
+INSERT INTO point_2d VALUES(-1, -1);
+INSERT INTO point_2d VALUES( 0,  0);
+INSERT INTO point_2d VALUES(-1, -2);
