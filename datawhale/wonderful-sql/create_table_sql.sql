@@ -112,3 +112,44 @@ CREATE TABLE point_2d (
 INSERT INTO point_2d VALUES(-1, -1);
 INSERT INTO point_2d VALUES( 0,  0);
 INSERT INTO point_2d VALUES(-1, -2);
+
+-- 练习九：行程和用户
+DROP TABLE if EXISTS Trips;
+CREATE TABLE Trips(
+    Id INT,
+    Client_Id INT,
+    Driver_Id INT,
+    City_Id INT,
+    Status VARCHAR(30),
+    Request_at DATE,
+    PRIMARY KEY (Id)
+);
+
+INSERT INTO Trips VALUES (1, 1, 10, 1, 'completed', '2013-10-1');
+INSERT INTO Trips VALUES (2, 2, 11, 1, 'cancelled_by_driver', '2013-10-1');
+INSERT INTO Trips VALUES (3, 3, 12, 6, 'completed', '2013-10-1');
+INSERT INTO Trips VALUES (4, 4, 13, 6, 'cancelled_by_client', '2013-10-1');
+INSERT INTO Trips VALUES (5, 1, 10, 1, 'completed', '2013-10-2');
+INSERT INTO Trips VALUES (6, 2, 11, 6, 'completed', '2013-10-2');
+INSERT INTO Trips VALUES (7, 3, 12, 6, 'completed', '2013-10-2');
+INSERT INTO Trips VALUES (8, 2, 12, 12, 'completed', '2013-10-3');
+INSERT INTO Trips VALUES (9, 3, 10, 12, 'completed', '2013-10-3');
+INSERT INTO Trips VALUES (10, 4, 13, 12, 'cancelled_by_driver', '2013-10-3');
+
+
+DROP TABLE if EXISTS Users ;
+CREATE TABLE Users(
+    Users_Id  INT,
+    Banned    VARCHAR(30),
+    Role      VARCHAR(30),
+    PRIMARY KEY (Users_Id)
+);
+
+INSERT INTO Users VALUES (1,    'No',  'client');
+INSERT INTO Users VALUES (2,    'Yes', 'client');
+INSERT INTO Users VALUES (3,    'No',  'client');
+INSERT INTO Users VALUES (4,    'No',  'client');
+INSERT INTO Users VALUES (10,   'No',  'driver');
+INSERT INTO Users VALUES (11,   'No',  'driver');
+INSERT INTO Users VALUES (12,   'No',  'driver');
+INSERT INTO Users VALUES (13,   'No',  'driver');
