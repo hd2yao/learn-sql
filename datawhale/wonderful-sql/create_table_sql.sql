@@ -203,3 +203,14 @@ insert into row_col values ('2021-01-03','胜');
 insert into row_col values ('2021-01-03','负');
 insert into row_col values ('2021-01-01','胜');
 insert into row_col values ('2021-01-03','负');
+
+-- 练习二：列转行
+DROP TABLE IF EXISTS col_row;
+create table col_row(
+    `比赛日期` date
+    ,`胜` int
+    ,`负` int
+);
+
+insert into col_row values ('2021-01-01', 4, 1);
+insert into col_row values ('2021-01-03', 1, 4);
