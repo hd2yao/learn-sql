@@ -174,6 +174,20 @@ INSERT INTO score2 VALUES('C', 'chinese', 88);
 INSERT INTO score2 VALUES('C', 'math',    87);
 INSERT INTO score2 VALUES('C', 'english', 86);
 
+-- 练习二：列转行
+DROP TABLE IF EXISTS `score22`;
+CREATE TABLE `score22` (
+    `name` varchar(20) DEFAULT NULL,
+    `chinese` int DEFAULT NULL,
+    `math`    int DEFAULT NULL,
+    `english` int DEFAULT NULL
+);
+
+INSERT INTO score22 VALUES('A', 99, 98, 97);
+INSERT INTO score22 VALUES('B', 92, 91, 90);
+INSERT INTO score22 VALUES('C', 88, 87, 86);
+
+
 -- Section C
 
 -- 练习一：行转列
