@@ -153,3 +153,23 @@ INSERT INTO Users VALUES (10,   'No',  'driver');
 INSERT INTO Users VALUES (11,   'No',  'driver');
 INSERT INTO Users VALUES (12,   'No',  'driver');
 INSERT INTO Users VALUES (13,   'No',  'driver');
+
+-- Section B
+
+-- 练习一：行转列
+DROP TABLE IF EXISTS `score2`;
+CREATE TABLE `score2` (
+    `name` varchar(20) DEFAULT NULL,
+    `subject` varchar(20) DEFAULT NULL,
+    `score` int DEFAULT NULL
+);
+
+INSERT INTO score2 VALUES('A', 'chinese', 99);
+INSERT INTO score2 VALUES('A', 'math',    98);
+INSERT INTO score2 VALUES('A', 'english', 97);
+INSERT INTO score2 VALUES('B', 'chinese', 92);
+INSERT INTO score2 VALUES('B', 'math',    91);
+INSERT INTO score2 VALUES('B', 'english', 90);
+INSERT INTO score2 VALUES('C', 'chinese', 88);
+INSERT INTO score2 VALUES('C', 'math',    87);
+INSERT INTO score2 VALUES('C', 'english', 86);
