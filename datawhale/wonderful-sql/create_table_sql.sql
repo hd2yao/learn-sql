@@ -173,3 +173,19 @@ INSERT INTO score2 VALUES('B', 'english', 90);
 INSERT INTO score2 VALUES('C', 'chinese', 88);
 INSERT INTO score2 VALUES('C', 'math',    87);
 INSERT INTO score2 VALUES('C', 'english', 86);
+
+-- Section C
+
+-- 练习一：行转列
+DROP TABLE IF EXISTS row_col;
+create table row_col(
+    cdate date,
+    result varchar(255)
+);
+
+insert into row_col values ('2021-01-01','胜');
+insert into row_col values ('2021-01-01','负');
+insert into row_col values ('2021-01-03','胜');
+insert into row_col values ('2021-01-03','负');
+insert into row_col values ('2021-01-01','胜');
+insert into row_col values ('2021-01-03','负');
