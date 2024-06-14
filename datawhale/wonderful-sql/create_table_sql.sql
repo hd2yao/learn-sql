@@ -245,3 +245,17 @@ INSERT INTO t_act_records VALUES('u1004', 20210102);
 INSERT INTO t_act_records VALUES('u1004', 20210103);
 INSERT INTO t_act_records VALUES('u1004', 20210104);
 INSERT INTO t_act_records VALUES('u1004', 20210105);
+
+-- 练习四：用户购买商品推荐
+DROP TABLE IF EXISTS `orders`;
+CREATE TABLE `orders`(
+    `user_id` int NOT NULL,
+    `product_id` int NOT NULL
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
+INSERT INTO `orders` VALUES (123, 1);
+INSERT INTO `orders` VALUES (123, 2);
+INSERT INTO `orders` VALUES (123, 3);
+INSERT INTO `orders` VALUES (456, 1);
+INSERT INTO `orders` VALUES (456, 2);
+INSERT INTO `orders` VALUES (456, 4);
