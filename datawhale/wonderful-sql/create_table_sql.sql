@@ -187,6 +187,20 @@ INSERT INTO score22 VALUES('A', 99, 98, 97);
 INSERT INTO score22 VALUES('B', 92, 91, 90);
 INSERT INTO score22 VALUES('C', 88, 87, 86);
 
+-- 练习三：谁是明星带货主播？
+DROP TABLE if EXISTS anchor_sales;
+CREATE TABLE anchor_sales(
+    anchor_name  VARCHAR(20),
+    date INT,
+    sales INT
+);
+
+INSERT INTO anchor_sales VALUES('A', 20210101, 40000);
+INSERT INTO anchor_sales VALUES('B', 20210101, 80000);
+INSERT INTO anchor_sales VALUES('A', 20210102, 10000);
+INSERT INTO anchor_sales VALUES('C', 20210102, 90000);
+INSERT INTO anchor_sales VALUES('A', 20210103,  7500);
+INSERT INTO anchor_sales VALUES('C', 20210103, 80000);
 
 -- Section C
 
@@ -214,3 +228,38 @@ create table col_row(
 
 insert into col_row values ('2021-01-01', 4, 1);
 insert into col_row values ('2021-01-03', 1, 4);
+
+-- 练习三：连续登录
+DROP TABLE if EXISTS t_act_records;
+CREATE TABLE t_act_records(
+    uid  VARCHAR(20),
+    imp_date DATE
+);
+
+INSERT INTO t_act_records VALUES('u1001', 20210101);
+INSERT INTO t_act_records VALUES('u1002', 20210101);
+INSERT INTO t_act_records VALUES('u1003', 20210101);
+INSERT INTO t_act_records VALUES('u1003', 20210102);
+INSERT INTO t_act_records VALUES('u1004', 20210101);
+INSERT INTO t_act_records VALUES('u1004', 20210102);
+INSERT INTO t_act_records VALUES('u1004', 20210103);
+INSERT INTO t_act_records VALUES('u1004', 20210104);
+INSERT INTO t_act_records VALUES('u1004', 20210105);
+
+-- 练习四：用户购买商品推荐
+DROP TABLE IF EXISTS `orders`;
+CREATE TABLE `orders`(
+    `user_id` int NOT NULL,
+    `product_id` int NOT NULL
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
+INSERT INTO `orders` VALUES (123, 1);
+INSERT INTO `orders` VALUES (123, 2);
+INSERT INTO `orders` VALUES (123, 3);
+INSERT INTO `orders` VALUES (456, 1);
+INSERT INTO `orders` VALUES (456, 2);
+INSERT INTO `orders` VALUES (456, 4);
+INSERT INTO `orders` VALUES (789, 1);
+INSERT INTO `orders` VALUES (789, 3);
+INSERT INTO `orders` VALUES (789, 4);
+INSERT INTO `orders` VALUES (789, 5);
