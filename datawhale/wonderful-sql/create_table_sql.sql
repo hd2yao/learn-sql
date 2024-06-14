@@ -187,6 +187,20 @@ INSERT INTO score22 VALUES('A', 99, 98, 97);
 INSERT INTO score22 VALUES('B', 92, 91, 90);
 INSERT INTO score22 VALUES('C', 88, 87, 86);
 
+-- 练习三：谁是明星带货主播？
+DROP TABLE if EXISTS anchor_sales;
+CREATE TABLE anchor_sales(
+    anchor_name  VARCHAR(20),
+    date INT,
+    sales INT
+);
+
+INSERT INTO anchor_sales VALUES('A', 20210101, 40000);
+INSERT INTO anchor_sales VALUES('B', 20210101, 80000);
+INSERT INTO anchor_sales VALUES('A', 20210102, 10000);
+INSERT INTO anchor_sales VALUES('C', 20210102, 90000);
+INSERT INTO anchor_sales VALUES('A', 20210103,  7500);
+INSERT INTO anchor_sales VALUES('C', 20210103, 80000);
 
 -- Section C
 
