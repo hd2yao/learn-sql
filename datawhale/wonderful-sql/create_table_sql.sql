@@ -228,3 +228,20 @@ create table col_row(
 
 insert into col_row values ('2021-01-01', 4, 1);
 insert into col_row values ('2021-01-03', 1, 4);
+
+-- 练习三：连续登录
+DROP TABLE if EXISTS t_act_records;
+CREATE TABLE t_act_records(
+    uid  VARCHAR(20),
+    imp_date DATE
+);
+
+INSERT INTO t_act_records VALUES('u1001', 20210101);
+INSERT INTO t_act_records VALUES('u1002', 20210101);
+INSERT INTO t_act_records VALUES('u1003', 20210101);
+INSERT INTO t_act_records VALUES('u1003', 20210102);
+INSERT INTO t_act_records VALUES('u1004', 20210101);
+INSERT INTO t_act_records VALUES('u1004', 20210102);
+INSERT INTO t_act_records VALUES('u1004', 20210103);
+INSERT INTO t_act_records VALUES('u1004', 20210104);
+INSERT INTO t_act_records VALUES('u1004', 20210105);
