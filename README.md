@@ -1,2 +1,1 @@
-# wonderful-sql
-
+# learn-sql
